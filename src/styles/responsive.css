@@ -1,0 +1,96 @@
+@media screen and (max-width: 499px) {
+    .nav {
+        z-index: 10;
+        background-color: white;
+        width: 100%;
+        position: absolute;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        transition: transform 0.3s ease;
+    }
+    .hero{
+        background-image: url('/images/hero-image_2-small.jpg');
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .nav_item {
+        display: list-item;
+        border-bottom: 1px solid #E0E0E0;
+        width: 100%;
+        text-align: left;
+    }
+    .header_menu {
+        min-width:50px;
+        text-align: center;
+    }
+    .header_title {
+        font-size: 30px;
+        letter-spacing: 8px;
+    }
+    footer {
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .header_menu {
+        display: none
+    }
+    .header_title {
+        width: 100%;
+    }
+    .hero{
+        background-image: url('/images/hero-image_2-large.jpg');
+    }
+}
+@media screen and (min-width: 600px) {
+	.restaurants {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-column-gap: 10px;
+		grid-row-gap: 16px
+	}
+    .restaurant {
+        grid-template-columns: 1fr auto;
+    }
+    .restaurant .resto_name {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .restaurant .resto_pic {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .restaurant .resto_content {
+        grid-column-start: 3;
+        grid-row-start: 2; 
+        grid-row-end: 5;
+    }
+    .restaurant .resto_detailDesc {
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+    .restaurant .resto-review{
+        grid-column-start: 1;
+        grid-column-end: 3;
+    }
+}
+@media screen and (min-width: 900px) {
+	.restaurants {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr
+	}
+}
+
+@media screen and (min-width: 1200px) {
+    main {
+        max-width: 1200px;
+    }
+    .hero {
+        min-width: 1000px;
+    }
+}
